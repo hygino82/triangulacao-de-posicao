@@ -59,7 +59,7 @@ public class Ponto {
 
 	@Override
 	public String toString() {
-		return "(" + String.format("%.4f", x) + ", " + String.format("%.4f", y) + ")";
+		return "(" + String.format("%.2f", x) + "; " + String.format("%.2f", y) + ")";
 	}
 
 }
