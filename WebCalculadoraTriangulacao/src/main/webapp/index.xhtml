@@ -7,6 +7,30 @@
     </h:head>
     <h:body>
         Hello from Facelets
+
+        <h:form>
+            Informe as coordenadas do primeiro ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.xa}"/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.ya}"/><br/>
+            Informe a distância do primeiro ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.da}"/><br/><br/>
+            
+            Informe as coordenadas do segundo ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.xb}"/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.yb}"/><br/>
+            Informe a distância do segundo ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.db}"/><br/><br/>
+            
+            Informe as coordenadas do terceiro ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.xc}"/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.yc}"/><br/>
+            Informe a distância do terceiro ponto<br/>
+            <h:inputText value="#{jsfCalculadoraTriangulacao.dc}"/><br/><br/>
+            
+            <h:commandButton value="Calcular" action="#{jsfCalculadoraTriangulacao.calcularPonto()}"/><br/><br/>
+            
+            <h:outputText value="#{jsfCalculadoraTriangulacao.ponto}"/>
+        </h:form>
     </h:body>
 </html>
 
