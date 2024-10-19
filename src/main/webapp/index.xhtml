@@ -7,27 +7,27 @@
     </h:head>
     <h:body>
         Triangular posição
-         <h:form>
+        <h:form>
             Informe as coordenadas do primeiro ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.xa}"/>
             <h:inputText value="#{jsfTriangularPosicao.ya}"/><br/>
             Informe a distância do primeiro ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.da}"/><br/><br/>
-            
+
             Informe as coordenadas do segundo ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.xb}"/>
             <h:inputText value="#{jsfTriangularPosicao.yb}"/><br/>
             Informe a distância do segundo ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.db}"/><br/><br/>
-            
+
             Informe as coordenadas do terceiro ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.xc}"/>
             <h:inputText value="#{jsfTriangularPosicao.yc}"/><br/>
             Informe a distância do terceiro ponto<br/>
             <h:inputText value="#{jsfTriangularPosicao.dc}"/><br/><br/>
-            
+
             <h:commandButton value="Calcular" action="#{jsfTriangularPosicao.calcularPonto()}"/><br/><br/>
-            
+            Coordenadas do ponto encontradas<br/>
             <h:outputText value="#{jsfTriangularPosicao.ponto}"/>
         </h:form>
     </h:body>
